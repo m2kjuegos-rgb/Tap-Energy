@@ -2,8 +2,8 @@
 -- Tap Visual Client
 -- Responsabilidad:
 -- - Mostrar +Energy
--- - Efecto de presi√≥n
--- - Part√≠culas
+-- - Efecto de presiÛn
+-- - PartÌculas
 -- - Sonido normal / sonido paquete
 --==================================================
 
@@ -92,7 +92,7 @@ local function createTapEffect(mousePos, energy, isPackage)
 		cooldownFlash()
 	end
 
-	-- üåä EFECTO DE PRESI√ìN
+	-- ?? EFECTO DE PRESI”N
 	local circle = Instance.new("Frame")
 	circle.Size = UDim2.fromOffset(30,30)
 	circle.Position = UDim2.fromOffset(mousePos.X, mousePos.Y)
@@ -117,7 +117,7 @@ local function createTapEffect(mousePos, energy, isPackage)
 
 	Debris:AddItem(circle, 2)
 
-	-- üî¢ TEXTO +ENERGY
+	-- ?? TEXTO +ENERGY
 	-- TEXTO +ENERGY
 	local text = Instance.new("TextLabel")
 	text.Size = UDim2.fromOffset(260,50)
@@ -147,7 +147,7 @@ local function createTapEffect(mousePos, energy, isPackage)
 			Position = text.Position - UDim2.fromOffset(0,70)
 		}):Play()
 
-	-- FASE 2: desaparecer DESPU√âS
+	-- FASE 2: desaparecer DESPU…S
 	task.delay(1, function()
 		TweenService:Create(text, TweenInfo.new(
 			0.8,
@@ -169,7 +169,7 @@ local function createTapEffect(mousePos, energy, isPackage)
 	Debris:AddItem(text, 2)
 
 
-	-- ‚ú® PART√çCULAS
+	-- ? PARTÕCULAS
 	local particleCount = isPackage and 10 or 5
 	for i = 1, particleCount do
 		local p = Instance.new("Frame")
@@ -203,7 +203,7 @@ local function createTapEffect(mousePos, energy, isPackage)
 		Debris:AddItem(p, 1)
 	end
 
-	-- üîä SONIDO
+	-- ?? SONIDO
 	if isPackage then
 		playSound(PACKAGE_SOUND, 0.9)
 	else
