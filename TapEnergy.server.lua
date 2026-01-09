@@ -1,11 +1,11 @@
 --[[
 	Sistema: TapEnergy
-	UbicaciÃ³n: ServerScriptService/Systems
+	Ubicación: ServerScriptService/Systems
 
 	Responsabilidad:
 	- Recibir taps del cliente
 	- Aplicar cooldown por jugador
-	- Calcular energÃ­a ganada
+	- Calcular energía ganada
 ]]
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -31,7 +31,7 @@ TapEvent.OnServerEvent:Connect(function(player)
 	local cooldown = cooldownValue.Value
 
 
-	-- VerificaciÃ³n de cooldown
+	-- Verificación de cooldown
 	if currentTime - lastTime < cooldown then
 		return -- tap ignorado
 	end
