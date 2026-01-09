@@ -1,6 +1,6 @@
 --========================================
 -- Sistema: UpgradeSystem (UNIFICADO)
--- UbicaciÃ³n: ServerScriptService/Systems
+-- Ubicación: ServerScriptService/Systems
 --========================================
 
 local Players = game:GetService("Players")
@@ -10,7 +10,7 @@ local BuyEvent = ReplicatedStorage.RemoteEvents:WaitForChild("BuyUpgradeEvent")
 local UpdateUI = ReplicatedStorage.RemoteEvents:WaitForChild("UpdateUpgradeUI")
 
 --========================================
--- CONFIGURACIÃ“N DE UPGRADES
+-- CONFIGURACIÓN DE UPGRADES
 --========================================
 
 local UPGRADES = {
