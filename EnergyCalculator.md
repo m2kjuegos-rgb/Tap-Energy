@@ -1,15 +1,15 @@
 --==================================================
 -- MODULE: EnergyCalculator
 -- Responsabilidad:
--- - Calcular energía por tap
+-- - Calcular energÃ­a por tap
 -- - Cooldown
--- - Paquetes de energía (random)
+-- - Paquetes de energÃ­a (random)
 --==================================================
 
 local EnergyCalculator = {}
 
 --==============================
--- CONFIGURACIÓN BASE
+-- CONFIGURACIÃ“N BASE
 --==============================
 
 local BASE_ENERGY = 1
@@ -23,12 +23,12 @@ local BASE_PACKAGE_CHANCE = 0.01
 --==============================
 
 function EnergyCalculator.GetTapCooldown(player)
-	-- Más adelante: reducir con upgrades
+	-- MÃ¡s adelante: reducir con upgrades
 	return BASE_TAP_COOLDOWN
 end
 
 --==============================
--- ENERGÍA BASE
+-- ENERGÃA BASE
 --==============================
 
 function EnergyCalculator.GetEnergyPerTap(multiplier)
@@ -36,7 +36,7 @@ function EnergyCalculator.GetEnergyPerTap(multiplier)
 end
 
 --==============================
--- PAQUETES DE ENERGÍA
+-- PAQUETES DE ENERGÃA
 --==============================
 
 local function getPackageByMultiplier(multiplier)
@@ -51,7 +51,7 @@ end
 
 function EnergyCalculator.RollEnergyPackage(player, multiplier)
 	local chance = BASE_PACKAGE_CHANCE
-	-- Más adelante: chance += upgrades del jugador
+	-- MÃ¡s adelante: chance += upgrades del jugador
 
 	if math.random() < chance then
 		return getPackageByMultiplier(multiplier)
