@@ -20,8 +20,7 @@ ServerScriptService
 ├─ Systems
 │ ├─ MultiplierSystem.server.lua
 │ ├─ TapEnergy.server.lua
-│ ├─ UpgradesSystem.server.lua
-│ ├─ UpgradesServer.server.lua
+│ ├─ UpgradesController.server.lua
 │
 StarterGui
 ├─ UI
