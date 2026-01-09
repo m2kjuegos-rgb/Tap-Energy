@@ -6,7 +6,7 @@ MultiplierConfig.CostMultiplier = 1.6
 -- costo extra por nivel de mejora
 MultiplierConfig.PowerCostMultiplier = 1.15
 
--- cu·nto sube el multiplier por compra
+-- cu√°nto sube el multiplier por compra
 function MultiplierConfig.GetMultiplierGain(powerLevel)
 	return 1 + powerLevel
 end
