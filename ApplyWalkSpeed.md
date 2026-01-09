@@ -23,7 +23,7 @@ end
 -- Al aparecer
 player.CharacterAdded:Connect(applySpeed)
 
--- Si mejora mientras est· vivo
+-- Si mejora mientras est√° vivo
 player:GetAttributeChangedSignal("MoveSpeedLevel"):Connect(function()
 	if player.Character then
 		applySpeed(player.Character)
