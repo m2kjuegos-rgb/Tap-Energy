@@ -1,12 +1,12 @@
 local PackageChance = {}
 
--- CONFIG ECONOM√çA
+-- CONFIG ECONOMÕA
 PackageChance.MAX_LEVEL = 45
 PackageChance.BASE_CHANCE = 0.01      -- 1%
 PackageChance.MAX_CHANCE = 0.10       -- 10%
-PackageChance.PACKAGE_MULTIPLIER = 3  -- x3 energ√≠a
+PackageChance.PACKAGE_MULTIPLIER = 3  -- x3 energÌa
 
--- Calcula probabilidad seg√∫n nivel
+-- Calcula probabilidad seg˙n nivel
 function PackageChance.GetChance(level)
 	level = math.clamp(level, 0, PackageChance.MAX_LEVEL)
 
@@ -20,7 +20,7 @@ function PackageChance.Roll(level)
 	return math.random() < PackageChance.GetChance(level)
 end
 
--- Energ√≠a extra del paquete
+-- EnergÌa extra del paquete
 function PackageChance.GetPackageEnergy(baseEnergy)
 	return math.floor(baseEnergy * PackageChance.PACKAGE_MULTIPLIER)
 end
