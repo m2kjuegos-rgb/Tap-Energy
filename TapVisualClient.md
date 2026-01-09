@@ -2,8 +2,8 @@
 -- Tap Visual Client
 -- Responsabilidad:
 -- - Mostrar +Energy
--- - Efecto de presiÛn
--- - PartÌculas
+-- - Efecto de presi√≥n
+-- - Part√≠culas
 -- - Sonido normal / sonido paquete
 --==================================================
 
@@ -92,7 +92,7 @@ local function createTapEffect(mousePos, energy, isPackage)
 		cooldownFlash()
 	end
 
-	-- ?? EFECTO DE PRESI”N
+	-- ?? EFECTO DE PRESI√ìN
 	local circle = Instance.new("Frame")
 	circle.Size = UDim2.fromOffset(30,30)
 	circle.Position = UDim2.fromOffset(mousePos.X, mousePos.Y)
@@ -147,7 +147,7 @@ local function createTapEffect(mousePos, energy, isPackage)
 			Position = text.Position - UDim2.fromOffset(0,70)
 		}):Play()
 
-	-- FASE 2: desaparecer DESPU…S
+	-- FASE 2: desaparecer DESPU√âS
 	task.delay(1, function()
 		TweenService:Create(text, TweenInfo.new(
 			0.8,
@@ -169,7 +169,7 @@ local function createTapEffect(mousePos, energy, isPackage)
 	Debris:AddItem(text, 2)
 
 
-	-- ? PARTÕCULAS
+	-- ? PART√çCULAS
 	local particleCount = isPackage and 10 or 5
 	for i = 1, particleCount do
 		local p = Instance.new("Frame")
