@@ -1,6 +1,6 @@
 --========================================
 -- Client: UpgradeClient (UNIFICADO)
--- UbicaciÛn: StarterPlayerScripts/Systems/Upgrade
+-- Ubicaci√≥n: StarterPlayerScripts/Systems/Upgrade
 --========================================
 
 local Players = game:GetService("Players")
@@ -13,7 +13,7 @@ local BuyEvent = ReplicatedStorage.RemoteEvents:WaitForChild("BuyUpgradeEvent")
 local UpdateUI = ReplicatedStorage.RemoteEvents:WaitForChild("UpdateUpgradeUI")
 
 --========================================
--- JERARQUÕA UI
+-- JERARQU√çA UI
 --========================================
 
 local upgradeGui = gui:WaitForChild("Upgrade")
