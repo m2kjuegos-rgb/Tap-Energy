@@ -1,6 +1,6 @@
 --[[
 	Sistema: PlayerStats
-	Ubicación: ServerScriptService/Core
+	UbicaciÃ³n: ServerScriptService/Core
 
 	Responsabilidad:
 	- Crear leaderstats del jugador
